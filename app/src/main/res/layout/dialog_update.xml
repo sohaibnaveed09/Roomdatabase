@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="8dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UPDATE DATE"
+        android:fontFamily="@font/bungee"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:paddingLeft="70dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_name"
+        android:hint="Enter Name !"
+        android:padding="12dp"
+        android:gravity="top"
+        android:background="@android:drawable/editbox_background"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_email"
+        android:hint="Enter Email !"
+        android:padding="12dp"
+        android:gravity="top"
+        android:background="@android:drawable/editbox_background"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_Phone_no"
+        android:hint="Enter Phone Number !"
+        android:inputType="number"
+        android:padding="12dp"
+        android:gravity="top"
+        android:background="@android:drawable/editbox_background"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_password"
+        android:hint="Enter Password !"
+        android:padding="12dp"
+        android:gravity="top"
+        android:background="@android:drawable/editbox_background"/>
+
+    <RadioGroup
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/update_radio_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onupRadioButtonClicked"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/update_radio_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onupRadioButtonClicked"
+            android:text="Female" />
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_update"
+        android:text="UPDATE"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>
